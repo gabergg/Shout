@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">YelpYapper</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_yelp2_api">Yelp2Api</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="edit_message">Enter a message</string>
+    <string name="button_send">Drink Bubble Tea!</string>
+    <string name="consumer_key">yHlPXSNttURHSPcX6pXWXQ</string>
+    <string name="consumer_secret">wH4ZpOTzaHfJMClZewVamwTC2jw</string>
+    <string name="token">1cqlZEjO3fw87rrPYQo2rewHBntXRMOT</string>
+    <string name="token_secret">sHXVuLAWvSG-VGl5DHKFMt_EsA8</string>
+    <string name="title_activity_display_result">Display Result</string>
+    <string name="title_activity_seek_bar_grabber">SeekBarGrabber</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="min_rating">1</string>
+    <string name="max_rating">5</string>
+    <string name="min_radius">.5</string>
+    <string name="max_radius">25</string>
+
+</resources>
