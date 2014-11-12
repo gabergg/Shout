@@ -161,3 +161,29 @@ java.lang.NullPointerException: returnTypeReference is mandatory
 	at com.android.tools.lint.client.api.LintDriver.analyze(LintDriver.java:363)
 	at com.android.ide.eclipse.adt.internal.lint.LintJob.run(LintJob.java:163)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SESSION 2014-11-12 12:46:18.988 -----------------------------------------------
+eclipse.buildId=v22.2.1-833290
+java.version=1.7.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Framework arguments:  -product com.android.ide.eclipse.adt.package.product -product com.android.ide.eclipse.adt.package.product -product com.android.ide.eclipse.adt.package.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -product com.android.ide.eclipse.adt.package.product -product com.android.ide.eclipse.adt.package.product -data /home/gabe/Code/Shout -product com.android.ide.eclipse.adt.package.product
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-12 12:52:48.435
+!MESSAGE activity_result.xml: Couldn't resolve resource @string/hello_world
+!SESSION 2014-11-12 12:54:16.391 -----------------------------------------------
+eclipse.buildId=v22.2.1-833290
+java.version=1.7.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Framework arguments:  -product com.android.ide.eclipse.adt.package.product -product com.android.ide.eclipse.adt.package.product -product com.android.ide.eclipse.adt.package.product -product com.android.ide.eclipse.adt.package.product -product com.android.ide.eclipse.adt.package.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -product com.android.ide.eclipse.adt.package.product -product com.android.ide.eclipse.adt.package.product -product com.android.ide.eclipse.adt.package.product -product com.android.ide.eclipse.adt.package.product -data /home/gabe/Code/Shout -product com.android.ide.eclipse.adt.package.product
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-12 13:01:27.044
+!MESSAGE activity_launch.xml: Couldn't resolve resource @string/hello_world
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-12 13:01:40.396
+!MESSAGE activity_search.xml: Couldn't resolve resource @string/hello_world
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-12 13:02:56.021
+!MESSAGE activity_seek_bar.xml: Couldn't resolve resource @string/hello_world

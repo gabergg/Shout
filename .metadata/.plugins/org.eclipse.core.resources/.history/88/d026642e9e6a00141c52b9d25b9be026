@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="consumer_key">yHlPXSNttURHSPcX6pXWXQ</string>
+    <string name="consumer_secret">wH4ZpOTzaHfJMClZewVamwTC2jw</string>
+    <string name="token">1cqlZEjO3fw87rrPYQo2rewHBntXRMOT</string>
+    <string name="token_secret">sHXVuLAWvSG-VGl5DHKFMt_EsA8</string>
+
+</resources>

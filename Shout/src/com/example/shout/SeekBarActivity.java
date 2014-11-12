@@ -39,7 +39,7 @@ public class SeekBarActivity extends Activity implements OnSeekBarChangeListener
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_seek_bar_grabber);
+		setContentView(R.layout.activity_seek_bar);
 		
 		latlong = new LatLong(this);		
 		LatLong.updateLocation();
@@ -89,7 +89,7 @@ public class SeekBarActivity extends Activity implements OnSeekBarChangeListener
 	}
 	
 	public void sendMessage(View view){
-		startService(new Intent(this, YelpSearch.class));
+		startService(new Intent(this, SearchService.class));
 		yelpSearch();
 		/*
 		Intent intent = new Intent(this, DisplayResultActivity.class);
@@ -103,7 +103,7 @@ public class SeekBarActivity extends Activity implements OnSeekBarChangeListener
 			protected JSONObject doInBackground(SearchInput... input) {
 				Yelp yelp = new Yelp(getString(R.string.consumer_key), getString(R.string.consumer_secret),
 						getString(R.string.token), getString(R.string.token_secret));
-				String result = yelp.search("Bubble+Tea", location.getLatitude() + "," + location.getLongitude(), radius);		
+				String result = yelp.search("Restaurants", location.getLatitude() + "," + location.getLongitude(), radius);		
 
 				JSONObject response;
 				try {
@@ -117,6 +117,7 @@ public class SeekBarActivity extends Activity implements OnSeekBarChangeListener
 
 			@Override
 			protected void onPostExecute(JSONObject result) {
+				System.out.println(result);
 				myResults = result;
 				try {
 					processResult();
@@ -129,6 +130,7 @@ public class SeekBarActivity extends Activity implements OnSeekBarChangeListener
 	
 	private void processResult() throws JSONException{
 		output = "";
+		
 		for(int i=0; i<myResults.getJSONArray("businesses").length(); i++){
 			if(Double.parseDouble(myResults.getJSONArray("businesses").getJSONObject(i).get("rating").toString()) >= rating){	
 				output += "  :  " + myResults.getJSONArray("businesses").getJSONObject(i).get("name");
@@ -136,7 +138,7 @@ public class SeekBarActivity extends Activity implements OnSeekBarChangeListener
 				System.out.println("the is " + myResults.getJSONArray("businesses").length());
 			}
 		}
-		Intent intent = new Intent(this, DisplayResultActivity.class);
+		Intent intent = new Intent(this, ResultActivity.class);
 		intent.putExtra(EXTRA_OUTPUT, output);
 		startActivity(intent);
 	}

@@ -1,3 +1,5 @@
+package com.example.shout;
+
 import android.app.Service;
 import android.content.Intent;
 import android.location.Location;
@@ -48,7 +50,7 @@ public class SearchService extends Service {
 			protected JSONObject doInBackground(SearchInput... input) {
 				Yelp yelp = new Yelp(getString(R.string.consumer_key), getString(R.string.consumer_secret),
 						getString(R.string.token), getString(R.string.token_secret));
-				String result = yelp.search("Bubble+Tea", "hey", 5);		
+				String result = yelp.search("Restaurants", "hey", 5);		
 
 				JSONObject response;
 				try {

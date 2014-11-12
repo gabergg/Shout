@@ -16,7 +16,7 @@ public class Yelp {
 	Token accessToken;
 
 	public Yelp(String consumerKey, String consumerSecret, String token, String tokenSecret) {
-		this.service = new ServiceBuilder().provider(YelpApi2.class).apiKey(consumerKey).apiSecret(consumerSecret).build();
+		this.service = new ServiceBuilder().provider(YelpAPI2.class).apiKey(consumerKey).apiSecret(consumerSecret).build();
 		this.accessToken = new Token(token, tokenSecret);
 	}
 
@@ -40,7 +40,7 @@ public class Yelp {
 
 		request.addQuerystringParameter("term", term);
 		request.addQuerystringParameter("ll", location.getLatitude() + "," + location.getLongitude());
-		request.addQuerystringParameter("category_filter", "bubbletea");
+		//request.addQuerystringParameter("category_filter", "bubbletea");
 		request.addQuerystringParameter("radius_filter", "20000");
 		this.service.signRequest(this.accessToken, request);
 		Response response = request.send();  
