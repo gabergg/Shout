@@ -32,7 +32,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        
         <activity
             android:name="com.example.shout.ResultActivity"
             android:label="@string/title_activity_result"
@@ -42,11 +42,6 @@
                 android:value="com.example.shout.SeekBarActivity" />
         </activity>
 
-        <service
-            android:name="com.example.shout.SearchService"
-            android:enabled="true"
-            android:exported="true" >
-        </service>
     </application>
 
 </manifest>

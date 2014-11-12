@@ -26,7 +26,7 @@ public class Yelp {
 		request.addQuerystringParameter("term", term);
 		request.addQuerystringParameter("ll", location);
 		request.addQuerystringParameter("radius_filter", String.valueOf(radius*1609));
-		request.addQuerystringParameter("category_filter", "bubbletea");
+		//request.addQuerystringParameter("category_filter", "bubbletea");
 		this.service.signRequest(this.accessToken, request);
 		Response response = request.send();  
 		Log.i("Go body",String.valueOf(response.getCode()));

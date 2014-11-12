@@ -24,7 +24,7 @@ public class ResultActivity extends Activity {
 		
 		// Get the message from the intent
 	    Intent intent = getIntent();
-	    String message = intent.getStringExtra(SearchActivity.EXTRA_OUTPUT);
+	    String message = intent.getStringExtra(SeekBarActivity.EXTRA_OUTPUT);
 
 	    // Create the text view
 	    TextView textView = new TextView(this);

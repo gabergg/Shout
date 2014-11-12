@@ -3,11 +3,9 @@
 
     <string name="app_name">Shout!</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_launch">Shout!</string>
-    <string name="edit_message">Enter a message</string>
-    <string name="button_send">Drink Bubble Tea!</string>
-    <string name="title_activity_result">Display Result</string>
-    <string name="title_activity_seek_bar">SeekBar</string>
+    <string name="button_send">Find Locations</string>
+    <string name="title_activity_result">Locations</string>
+    <string name="title_activity_seek_bar">Shout!</string>
     <string name="min_rating">1</string>
     <string name="max_rating">5</string>
     <string name="min_radius">.5</string>
